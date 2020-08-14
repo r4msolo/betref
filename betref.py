@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''
 BetRef Information Gathering Tool
 -
