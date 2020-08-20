@@ -5,7 +5,7 @@
   $ pip install -r requirements.txt --user && chmod +x betref.py
 ```
 ```
-  $ ./betref.py
+  $ ./betref.py [ARGS]
 ```
 ```
 ARGS:
