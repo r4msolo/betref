@@ -72,10 +72,10 @@ class BetRef():
 				if address:
 					self.getDNS(address)
 					self.getRobots(address)
+				if not address:
+					print('\n\033[1;90m[!] No URL found, skipping...\033[0;0m')
 				elif search:
 					search = ' '.join(search)
-				else:
-					print('\n\033[1;90m[!] No URL found, skipping...\033[0;0m')
 				self.searchDorks(search,address,extf)
 
 		except socket.gaierror:
