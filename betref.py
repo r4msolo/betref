@@ -72,7 +72,7 @@ class BetRef():
 				if address:
 					self.getDNS(address)
 					self.getRobots(address)
-				if search:
+				elif search:
 					search = ' '.join(search)
 				else:
 					print('\n\033[1;90m[!] No URL found, skipping...\033[0;0m')
