@@ -7,17 +7,20 @@
 ```
   $ ./betref.py
 ```
-
+```
+ARGS:
 -s automated and exact search by name or phrase passed as an argument
 -u search within a given address
 -e Search for extensions ex: -e pdf
 -n Number of searchs ex: -n 5
 -d Manual search
 -o save search to file ex: -o dork.txt
-
+```
  ![](img/1.png)
  
- ![](img/2.png)	![](img/3.png)
+ ![](img/2.png)	
+ 
+ ![](img/3.png)
 
 
 ## License
