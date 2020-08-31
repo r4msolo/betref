@@ -192,7 +192,7 @@ class BetRef():
 					dork = "{}{}{}".format(engine,d,searchD)
 					self.filterResult(dork,se,d)
 				else:
-					dork = engine+searchD
+					dork = engine+' '.join(searchD)
 					self.filterResult(dork,se,d)
 					break
 
