@@ -2,7 +2,7 @@
 '''
 BetRef Information Gathering Tool
 -
-R4MSOLO
+Igor M. Martins
 '''
 from urllib.request import urlopen, Request
 from urllib.error import HTTPError
@@ -24,7 +24,7 @@ banner = '''\033[1;32m49 6E 66 6F 72 6D 61 74 69 6F 6E 47 61 74 68 65 72 69 6E 6
 \t\033[1;32m╚═════╝ ╚══════╝   ╚═╝   \033[1;31m╚═╝  ╚═╝╚══════╝╚═╝     
 
 49 6E 66 6F 72 6D 61 74 69 6F 6E 47 61 74 68 65 72 69 6E 67 
-\033[1;97m\n\t\t\t\t\tgithub.com/r4msolo\n[ ! ] Information Gathering\033[0;0m
+\033[1;97m\n\t\t\t\t\tgithub.com/immartinspy\n[ ! ] Information Gathering\033[0;0m
 
 '''
 
