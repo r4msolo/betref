@@ -25,4 +25,4 @@ ARGS:
 
 ## License
 
-MIT © [R4MSOLO](https://r4msolo.github.io)<br/>
+MIT © [Igor M. Martins](https://immartinspy.github.io)<br/>
