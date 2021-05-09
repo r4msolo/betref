@@ -25,4 +25,4 @@ ARGS:
 
 ## License
 
-MIT © [Igor M. Martins](https://immartinspy.github.io)<br/>
+MIT © [Igor M. Martins](https://imartinspy.github.io)<br/>
