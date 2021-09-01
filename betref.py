@@ -138,19 +138,28 @@ class BetRef():
 		print('\033[1;33mGet robots.txt from\033[1;31m',address,'\033[0;0m')
 		self.printDebug('[ROBOTS.TXT] '+address)
 		
-		address = address+'/robots.txt'
 		try:
+			validation = self.requests(f'www.google.com/search?q=site:{address}+inurl:robots.txt')
+			address = address+'/robots.txt'
+			validation = str(validation.readlines())
+			if address in validation.split('href="/url?q=')[1].split('&')[0]:
+				choice = input('\n\033[1;31mRobots file found by search engine, do you want to open it? Note: This action will create log on the server (y/N): \033[0;0m')
+				if choice.upper() == 'N':
+					return 0
+
 			robot = self.requests(address)
 			self.printOutput('======= ROBOTS =======\n'+address+'\n-\n',0)
 			for l in robot.readlines():
 				if 'sitemap.xml' in l.decode('utf-8'):
-					self.printOutput("sitemap found",1)
-					print('\033[1;32m[+]',l.decode('utf-8'),'\033[0;0m')
+					print('\033[1;32m[+] Found',l.decode('utf-8'),'\033[0;0m')
+				if 'Disallow: ' in l.decode('utf-8') and l.decode('utf-8').split('Disallow: ')[1] != '\n':
+					self.printOutput(l.decode('utf-8').split('Disallow: ')[1],3)
 				self.printOutput(l.decode('utf-8'),0)
 			self.printOutput('='*42+'\n',0)
+		
 		except:
 			self.printOutput('\n[!] robots.txt not found',3)
-			
+
 	def searchDorks(self,search,site,extf):
 		self.printDebug("function searchDorks()")
 
