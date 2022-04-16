@@ -170,7 +170,7 @@ class BetRef():
 		if site:
 			site = 'site:'+site
 		if extf:
-			extf = ' ext:'+extf
+			extf = 'filetype:'+extf
 		
 		for se in list(search_engine.keys()):
 			
